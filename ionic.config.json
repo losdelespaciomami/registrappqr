@@ -1,0 +1,11 @@
+{
+<<<<<<< HEAD
+  "name": "qr",
+=======
+  "name": "Registrapp",
+>>>>>>> e02cf71 (version 2.0)
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

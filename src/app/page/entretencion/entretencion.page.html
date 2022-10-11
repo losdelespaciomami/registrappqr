@@ -1,0 +1,54 @@
+<ion-header style="padding-bottom: 20px; padding-top: 20px; background-color: rgb(0, 0, 120);">
+  <div class="ion-text-center">
+    <span style="font-size: 50px; font-weight: bold;">R</span>
+    <span style="font-size: 50px; font-weight: bold;">e</span>
+    <span style="font-size: 50px; font-weight: bold;">g</span>
+    <span style="font-size: 50px; font-weight: bold;">i</span>
+    <span style="font-size: 50px; font-weight: bold;">s</span>
+    <span style="font-size: 50px; font-weight: bold;">t</span>
+    <span style="font-size: 50px; font-weight: bold;">r</span>
+    <span style="color: yellow; font-size: 50px; font-weight: bold;">A</span>
+    <span style="color: yellow; font-size: 50px; font-weight: bold;">P</span>
+    <span style="color: yellow; font-size: 50px; font-weight: bold;">P</span>
+  </div>
+</ion-header>
+
+<ion-content>
+  <ion-button expand="block" fill="clear" color="transparent" [routerLink]="['/registrapp']">
+    <ion-icon name="arrow-back"></ion-icon> Volver
+  </ion-button>
+  <ion-grid class="ion-text-center">
+    <b style="font-size: 25px;">Entretenimiento</b>
+  </ion-grid>
+  <div style="padding: 15px;">
+    <ion-grid class="ion-text-center">
+      <b style="font-size: 25px;">Fotos de perritos</b>
+    </ion-grid>
+    <ion-card-content class="ion-text-center">
+      <img src="{{imagenesPerro}}" alt="" width="200px">
+      <ion-button type="submit" color="warning" expand="block" (click)="recuperarPerros()">Nueva foto</ion-button>
+    </ion-card-content>
+
+    <ion-grid class="ion-text-center">
+      <b style="font-size: 25px;">Frases de gatos en ingles</b>
+    </ion-grid>
+    <ion-card>
+      <ion-card-content class="ion-text-center">
+        <h2><ion-input>{{datos}}</ion-input></h2>
+        <ion-button type="submit" color="warning" expand="block" (click)="recuperarGatos()">Nueva frase</ion-button>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-grid class="ion-text-center">
+      <b style="font-size: 25px;">Valor del euro actual</b>
+    </ion-grid>
+
+    <ion-card>
+      <ion-card-content class="ion-text-center">
+        <h3>Valor actual:</h3>
+        <h2>{{euro}}</h2>
+        <ion-button type="submit" color="warning" expand="block" (click)="recuperarDinero()">Recuperar Euro</ion-button>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

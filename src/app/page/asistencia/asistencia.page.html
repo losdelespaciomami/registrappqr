@@ -1,0 +1,176 @@
+<<<<<<< HEAD
+<ion-header [translucent]="false">
+  <img src="../../assets/img/logo.png">
+  <ion-back-button text="Volver" icon="arrow-back" defaultHref="docenteinicio"></ion-back-button>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <b>Se considera aprobado al Alumno que tenga un mínimo del 60% de asistencia</b>
+    <ion-item>
+      <ion-label>Nombre</ion-label>
+      <ion-label></ion-label>
+      <ion-label>Asistencia</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Lucas Rojas</ion-label>
+      <ion-badge color="success"> 90% </ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-label>Cynthia Gonzalez</ion-label>
+      <ion-badge color="success"> 100% </ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-label>Benjamin Gallardo</ion-label>
+      <ion-badge color="success"> 80% </ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-label>Nicolas Rojas</ion-label>
+      <ion-badge color="success">100%</ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-label>Samuel Antileo</ion-label>
+      <ion-badge color="success">100%</ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-label>Alicia Diaz</ion-label>
+      <ion-badge color="success">100%</ion-badge>
+    </ion-item>
+  </ion-list>
+
+  <ion-button [routerLink]="['/reprobados']" expand="block" fill="clear" color="transparent">Reprobados</ion-button>
+</ion-content>
+=======
+<ion-header style="padding-bottom: 20px; padding-top: 20px; background-color: rgb(0, 0, 120);">
+  <div class="ion-text-center">
+    <span style="font-size: 50px; font-weight: bold;">R</span>
+    <span style="font-size: 50px; font-weight: bold;">e</span>
+    <span style="font-size: 50px; font-weight: bold;">g</span>
+    <span style="font-size: 50px; font-weight: bold;">i</span>
+    <span style="font-size: 50px; font-weight: bold;">s</span>
+    <span style="font-size: 50px; font-weight: bold;">t</span>
+    <span style="font-size: 50px; font-weight: bold;">r</span>
+    <span style="color: yellow; font-size: 50px; font-weight: bold;">A</span>
+    <span style="color: yellow; font-size: 50px; font-weight: bold;">P</span>
+    <span style="color: yellow; font-size: 50px; font-weight: bold;">P</span>
+  </div>
+</ion-header>
+
+<ion-content>
+  <ion-button expand="block" fill="clear" color="transparent" [routerLink]="['/registrapp']"> <ion-icon name="arrow-back"></ion-icon> Volver </ion-button>
+  <hr>
+  <mat-card class="example-card" style="background-color: rgb(56, 56, 56);">
+    <mat-card-title-group>
+      <mat-card-title>Asistencias</mat-card-title>
+
+    </mat-card-title-group>
+    <mat-card-content>
+      <ion-accordion-group>
+        <ion-accordion value="first" toggleIcon="caret-down-circle" toggleIconSlot="start">
+          <ion-item slot="header" color="light">
+            <ion-label >Arquitectura</ion-label>
+            <ion-label >100%</ion-label>
+          </ion-item>
+          <div class="ion-padding" slot="content">
+            <ion-grid>
+              <ion-row>
+                <ion-col>
+                  <div>N° de clases registradas</div>
+                </ion-col>
+                <ion-col>
+                  <div></div>
+                </ion-col>
+                <ion-col>
+                  <div>17</div>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+            <ion-grid>
+              <ion-row>
+                <ion-col>
+                  <div>Asistencia </div>
+                </ion-col>
+                <ion-col>
+                  <div></div>
+                </ion-col>
+                <ion-col>
+                  <div>17</div>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </div>
+        </ion-accordion>
+        <ion-accordion value="second" toggleIcon="caret-down-circle" toggleIconSlot="start">
+          <ion-item slot="header" color="light">
+            <ion-label>Aplicación Moviles 94.1%</ion-label>
+          </ion-item>
+          <div class="ion-padding" slot="content">
+            <ion-grid>
+              <ion-row>
+                <ion-col>
+                  <div>N° de clases registradas</div>
+                </ion-col>
+                <ion-col>
+                  <div></div>
+                </ion-col>
+                <ion-col>
+                  <div>17</div>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+            <ion-grid>
+              <ion-row>
+                <ion-col>
+                  <div>Asistencia </div>
+                </ion-col>
+                <ion-col>
+                  <div></div>
+                </ion-col>
+                <ion-col>
+                  <div>16</div>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </div>
+        </ion-accordion>
+        <ion-accordion value="third" toggleIcon="caret-down-circle" toggleIconSlot="start">
+          <ion-item slot="header" color="light">
+            <ion-label>Portafolio 4 100%</ion-label>
+          </ion-item>
+          <div class="ion-padding" slot="content">
+            <ion-grid>
+              <ion-row>
+                <ion-col>
+                  <div>N° de clases registradas</div>
+                </ion-col>
+                <ion-col>
+                  <div></div>
+                </ion-col>
+                <ion-col>
+                  <div>4</div>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+            <ion-grid>
+              <ion-row>
+                <ion-col>
+                  <div>Asistencia </div>
+                </ion-col>
+                <ion-col>
+                  <div></div>
+                </ion-col>
+                <ion-col>
+                  <div>4</div>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </div>
+        </ion-accordion>
+      </ion-accordion-group>
+    </mat-card-content>
+  </mat-card>
+  
+
+</ion-content>
+>>>>>>> e02cf71 (version 2.0)

@@ -1,0 +1,41 @@
+<ion-header style="padding-bottom: 20px; padding-top: 20px; background-color: rgb(0, 0, 120);">
+  <div class="ion-text-center">
+    <span style="font-size: 50px; font-weight: bold;">R</span>
+    <span style="font-size: 50px; font-weight: bold;">e</span>
+    <span style="font-size: 50px; font-weight: bold;">g</span>
+    <span style="font-size: 50px; font-weight: bold;">i</span>
+    <span style="font-size: 50px; font-weight: bold;">s</span>
+    <span style="font-size: 50px; font-weight: bold;">t</span>
+    <span style="font-size: 50px; font-weight: bold;">r</span>
+    <span style="color: yellow; font-size: 50px; font-weight: bold;">A</span>
+    <span style="color: yellow; font-size: 50px; font-weight: bold;">P</span>
+    <span style="color: yellow; font-size: 50px; font-weight: bold;">P</span>
+  </div>
+</ion-header>
+
+<ion-content *ngIf="roles == 'Alumno'">
+  <ion-button expand="block" fill="clear" color="transparent" [routerLink]="['/registrapp']"> <ion-icon name="arrow-back"></ion-icon> Volver </ion-button>
+  <div class="ion-text-center">
+    <h3>Por favor, pulse el botón de Escanear Código Qr</h3>
+    <ngx-qrcode [elementType]="elementType" [value]='valoresA'></ngx-qrcode>
+    <ion-col>
+      <ion-button color="primary" expand="block" (click)="asistencia()">Escanear Código Qr</ion-button>
+    </ion-col>
+  </div>
+</ion-content>
+
+<ion-content *ngIf="roles == 'Profesor'">
+  <ion-button expand="block" fill="clear" color="transparent" [routerLink]="['/cursosdocente']"> <ion-icon name="arrow-back"></ion-icon> Volver </ion-button>
+  <div class="ion-text-center">
+    <h3>Por favor, pulse el botón Generar Código</h3>
+    <ion-button (click)="generarQr()">Generar Código</ion-button>
+    <hr>
+    <ngx-qrcode [elementType]="elementType" [value]='valores' *ngIf="logeado"></ngx-qrcode>
+  </div>
+  <div *ngIf="logeado">
+    <h1> <ion-icon name="barcode"></ion-icon> Datos del Código Qr</h1>
+    <p>Docente: {{ nombre }}</p>
+    <p>Fecha:  {{ fecha }}</p>
+  </div>
+
+</ion-content>

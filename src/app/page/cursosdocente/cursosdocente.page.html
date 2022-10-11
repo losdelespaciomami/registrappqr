@@ -1,0 +1,54 @@
+<<<<<<< HEAD
+<ion-header [translucent]="false">
+  <img src="../../assets/img/logo.png">
+  <ion-item *ngFor="let usuario of lista_usuarios">
+    <ion-label>
+      <h2>Bienvenido: {{usuario.nombreUsuario}}</h2>
+      <ion-button (click)="eliminar(usuario.nombreUsuario)" [routerLink]="['/docente']" expand="block" fill="clear" color="transparent">
+        <ion-icon name="arrow-back-outline"></ion-icon>Volver</ion-button>
+    </ion-label>
+  </ion-item>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-grid class="ion-text-center">
+    <b>Cursos disponibles</b>
+  </ion-grid>
+  <ion-item><ion-button class="cursos" [routerLink]="['/docenteinicio']">Aplicaciones Móviles 002D</ion-button></ion-item>
+  <ion-item><ion-button class="cursos" [routerLink]="['/docenteinicio']">Aplicaciones Móviles 003D</ion-button></ion-item>
+  <ion-item><ion-button class="cursos" [routerLink]="['/docenteinicio']">Arquitectura 006D</ion-button></ion-item>
+  <ion-item><ion-button class="cursos" [routerLink]="['/docenteinicio']">Arquitectura 008D</ion-button></ion-item>
+  <ion-item><ion-button class="cursos" [routerLink]="['/docenteinicio']">Consulta base de datos 005D</ion-button></ion-item>
+=======
+<ion-header style="padding-bottom: 20px; padding-top: 20px; background-color: rgb(0, 0, 120);">
+  <div class="ion-text-center">
+    <span style="font-size: 50px; font-weight: bold;">R</span>
+    <span style="font-size: 50px; font-weight: bold;">e</span>
+    <span style="font-size: 50px; font-weight: bold;">g</span>
+    <span style="font-size: 50px; font-weight: bold;">i</span>
+    <span style="font-size: 50px; font-weight: bold;">s</span>
+    <span style="font-size: 50px; font-weight: bold;">t</span>
+    <span style="font-size: 50px; font-weight: bold;">r</span>
+    <span style="color: yellow; font-size: 50px; font-weight: bold;">A</span>
+    <span style="color: yellow; font-size: 50px; font-weight: bold;">P</span>
+    <span style="color: yellow; font-size: 50px; font-weight: bold;">P</span>
+  </div>
+</ion-header>
+
+<ion-content>
+  <ion-button expand="block" fill="clear" color="transparent" [routerLink]="['/registrapp']"> <ion-icon name="arrow-back"></ion-icon> Volver </ion-button>
+  <ion-grid class="ion-text-center">
+    <b>Cursos disponibles</b>
+  </ion-grid>
+
+  <ion-list style="text-align:center">
+
+    <ion-button expand="block" fill="clear" color="transparent" [routerLink]="['/scanqr']">Aplicaciones Móviles 002D</ion-button>
+    <ion-button expand="block" fill="clear" color="transparent" [routerLink]="['/scanqr']">Arquitectura 006D</ion-button>
+    <ion-button expand="block" fill="clear" color="transparent" [routerLink]="['/scanqr']">Consulta base de datos 005D</ion-button>
+
+  </ion-list>
+
+
+>>>>>>> e02cf71 (version 2.0)
+</ion-content>

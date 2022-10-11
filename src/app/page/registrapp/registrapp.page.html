@@ -1,0 +1,83 @@
+<ion-header style="padding-bottom: 20px; padding-top: 20px; background-color: rgb(0, 0, 120);">
+  <div class="ion-text-center">
+    <span style="font-size: 50px; font-weight: bold;">R</span>
+    <span style="font-size: 50px; font-weight: bold;">e</span>
+    <span style="font-size: 50px; font-weight: bold;">g</span>
+    <span style="font-size: 50px; font-weight: bold;">i</span>
+    <span style="font-size: 50px; font-weight: bold;">s</span>
+    <span style="font-size: 50px; font-weight: bold;">t</span>
+    <span style="font-size: 50px; font-weight: bold;">r</span>
+    <span style="color: yellow; font-size: 50px; font-weight: bold;">A</span>
+    <span style="color: yellow; font-size: 50px; font-weight: bold;">P</span>
+    <span style="color: yellow; font-size: 50px; font-weight: bold;">P</span>
+  </div>
+</ion-header>
+
+<ion-content *ngIf="roles == 'Alumno'">
+  
+  <div class="ion-text-center">
+    <h3>Bienvenido {{ nombre }}</h3>
+  </div>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Registra tu asistencia</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Escanea un código QR y registra tu asistencia.
+      <ion-button expand="block" color="warning" [routerLink]="['/scanqr']">
+        <ion-icon name="camera" class="ion-margin-end"></ion-icon>Escanear Código QR</ion-button>
+    </ion-card-content>
+
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Asistencia</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      En esta sección podrás revisar porcentaje de asistencia y así no repetir por no ir a clases.
+      <ion-button expand="block" color="warning" [routerLink]="['/asistencia']">
+        <ion-icon name="image" class="ion-margin-end"></ion-icon>Ver asistencias</ion-button>
+    </ion-card-content>
+
+  </ion-card>
+</ion-content>
+
+<ion-content *ngIf="roles == 'Profesor'">
+  
+  <div class="ion-text-center">
+    <h3>Bienvenido {{ nombre }}</h3>
+  </div>
+
+  <ion-card>
+
+    <ion-card-header>
+      <ion-card-title>Generar Código QR</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Genera un código QR para que tus alumnos registren su asistencia.
+      <ion-button expand="block" color="warning" [routerLink]="['/cursosdocente']">
+        <ion-icon name="image" class="ion-margin-end"></ion-icon>Generar Código QR</ion-button>
+    </ion-card-content>
+
+  </ion-card>
+
+  <ion-card>
+
+    <ion-card-header>
+      <ion-card-title>Ver asistencias alumnos</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Podrás ver las asistencias de los alumnos en tus asignaturas
+      <ion-button expand="block" color="warning" [routerLink]="['/asistencia-profesor']">
+        <ion-icon name="image" class="ion-margin-end"></ion-icon>Ver asistencias</ion-button>
+    </ion-card-content>
+
+  </ion-card>
+
+</ion-content>
